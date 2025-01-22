@@ -63,6 +63,14 @@ h3 {
 
 /* HEADER */
 
+header {
+  overflow: hidden;
+}
+
+header h1 {
+  z-index: 1;
+}
+
 .background::before {
   content: " ";
   position: absolute;
@@ -70,19 +78,7 @@ h3 {
   height: 100%;
   background: url("../images/background.png") no-repeat;
   background-size: cover;
-}
-
-.bg-light::before {
-  content: " ";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--classic-chalk);
-  opacity: 0.9;
-}
-
-header {
-  overflow: hidden;
+  opacity: 0.1;
 }
 
 header .img-placeholder {
@@ -107,7 +103,7 @@ header .btn {
 }
 
 header .texts {
-  margin-top: 181px;
+  margin-top: 185px;
 }
 
 .btn-default {
@@ -124,14 +120,54 @@ header .texts {
   transition: all 0.3s linear;
 }
 
+/* PREVIEW */
+.preview {
+  text-align: center;
+}
+
+.preview h2,
+.preview p {
+  margin: 0 0 30px;
+}
+
+.preview a {
+  display: inline-block;
+  height: 517px;
+  position: relative;
+  top: 208px;
+  margin-top: -208px;
+}
+
+.preview img {
+  width: 919px;
+  height: 517px;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+/* NAVIGATION */
+
+.navigation {
+  background-color: var(--black-ink);
+}
+
+.navigation.section {
+  max-width: 100%;
+  height: 914px;
+}
+
+
 /* ATOMIC */
 
 .pos-rel {
   position: relative;
 }
 
-.z-1 {
-  z-index: 1;
+.bg-light {
+  background-color: var(--classic-chalk);
+}
+
+.bg-dark {
+  background-color: var(--song-thrush);
 }
 
 .m-0 {
