@@ -55,6 +55,10 @@ h3 {
   font-size: 34px;
 }
 
+h4 {
+  font-size: 52px;
+}
+
 .section {
   max-width: 1110px;
   margin: 0 auto;
@@ -139,8 +143,8 @@ header .texts {
 }
 
 .preview img {
-  width: 919px;
-  height: 517px;
+  width: var(--width);
+  height: 100%;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
@@ -150,10 +154,78 @@ header .texts {
   background-color: var(--black-ink);
 }
 
-.navigation.section {
-  max-width: 100%;
-  height: 914px;
+.navigation nav {
+  margin-top: 100px;
 }
+
+.navigation ol {
+  padding-left: 0;
+  gap: 20px 30px;
+}
+
+.navigation h4 {
+  flex-basis: 350px;
+  flex-shrink: 0;
+  color: var(--white);
+}
+
+.navigation li {
+  list-style: none;
+  flex-basis: 350px;
+  flex-shrink: 0;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: var(--classic-chalk);
+}
+
+.navigation a {
+  display: flex;
+  flex-basis: 350px;
+  flex-shrink: 0;
+  color: var(--bokara-grey);
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.navigation li a {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  color: var(--bokara-grey);
+  text-decoration: none;
+}
+
+.navigation li h3 {
+  margin: 0 0 16px;
+}
+
+.navigation li::before {
+  content: counter(list-item);
+  display: inline-block;
+  margin-bottom: 40px;
+  font-family: Neucha, sans-serif;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.navigation a:hover,
+.navigation a:hover h3,
+.navigation a:hover p,
+.navigation a:hover li::before{
+  transition: all 0.3s linear;
+  color: var(--white);
+}
+
+.navigation a:hover li {
+  transition: all 0.3s linear;
+  background-color: var(--american-orange);
+  }
+
+.navigation li:nth-child(odd +1) h3 {
+  white-space: nowrap;
+}
+
+/* IKEA */
 
 
 /* ATOMIC */
@@ -174,6 +246,10 @@ header .texts {
   margin: 0;
 }
 
+.f-wrap {
+  flex-wrap: wrap;
+}
+
 .text-special {
   color: var(--american-orange);
 }
@@ -184,8 +260,4 @@ header .texts {
 
 .d-flex {
   display: flex;
-}
-
-.g-30 {
-  gap: 30px;
 }
