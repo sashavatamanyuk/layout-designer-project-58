@@ -59,6 +59,14 @@ h4 {
   font-size: 52px;
 }
 
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
 .section {
   max-width: 1110px;
   margin: 0 auto;
@@ -145,7 +153,6 @@ header .texts {
 .preview img {
   width: var(--width);
   height: 100%;
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 /* NAVIGATION */
@@ -160,7 +167,6 @@ header .texts {
 
 .navigation ol {
   padding-left: 0;
-  gap: 20px 30px;
 }
 
 .navigation h4 {
@@ -195,6 +201,10 @@ header .texts {
   text-decoration: none;
 }
 
+.ikea-effect h3 {
+  margin-top: 30px;
+}
+
 .navigation li h3 {
   margin: 0 0 16px;
 }
@@ -206,6 +216,11 @@ header .texts {
   font-family: Neucha, sans-serif;
   font-size: 64px;
   line-height: 1;
+}
+
+.ikea-effect p {
+  font-size: 16px;
+  color: var(--bokara-grey);
 }
 
 .navigation a:hover,
@@ -227,6 +242,19 @@ header .texts {
 
 /* IKEA */
 
+.ikea-effect h5 {
+  color: var(--antique-silver);
+}
+
+.ikea-effect > h6 {
+  margin: 100px 0 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: OpenSans, sans-serif;
+  text-transform: uppercase;
+  color: var(--white);
+}
 
 /* ATOMIC */
 
@@ -260,4 +288,16 @@ header .texts {
 
 .d-flex {
   display: flex;
+}
+
+.gx-30 {
+  column-gap: 30px;
+}
+
+.gy-20 {
+  row-gap: 20px;
+}
+
+.drp-shadow {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
