@@ -256,6 +256,24 @@ header .texts {
   color: var(--white);
 }
 
+/* PREMATURE OPTIMIZATION */
+
+.premature-optimization h5 {
+  color: var(--in-the-buff);
+}
+
+.premature-optimization > h6 {
+  margin: 100px 0 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: OpenSans, sans-serif;
+  text-transform: uppercase;
+  color: var(--song-thrush);
+}
+
+
+
 /* ATOMIC */
 
 .pos-rel {
@@ -264,6 +282,10 @@ header .texts {
 
 .bg-light {
   background-color: var(--classic-chalk);
+}
+
+.bg-white {
+  background-color: var(--white);
 }
 
 .bg-dark {
@@ -280,6 +302,10 @@ header .texts {
 
 .text-special {
   color: var(--american-orange);
+}
+
+.text-white {
+  color: var(--white);
 }
 
 .fb-50 {
